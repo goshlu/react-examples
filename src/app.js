@@ -73,6 +73,24 @@ function Form({onAddItems}) {
 }
 
 function PackingList({items, onDeleteItem, onToggleItem}) {
+
+    const [sortBy, setSortBy] = useState("input");
+
+    let sortedItems;
+    switch (sortBy) {
+        case "input":
+            sortedItems = items;
+            break;
+        case "description":
+            sortedItems = items.slice().sort((a, b) => a.description.localeCompare(b.description));
+            break;
+        case "packed":
+            sortedItems = items.slice().sort((a, b) => Number(a.packaged) - Number(b.packaged));
+            break;
+        default:
+            sortedItems = items;
+    }
+
     return (
         <div className="list">
             <ul>
@@ -82,6 +100,14 @@ function PackingList({items, onDeleteItem, onToggleItem}) {
                     ))
                 }
             </ul>
+
+            <div className="actions">
+                <select value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
+                    <option value="input">Sort by input order</option>
+                    <option value="description">Sort by description</option>
+                    <option value="packed">Sort by packed status</option>
+                </select>
+            </div>
         </div>
     )
 }
@@ -89,7 +115,7 @@ function PackingList({items, onDeleteItem, onToggleItem}) {
 function Item({item, onDeleteItem, onToggleItem}) {
     return (
         <li>
-            <input type="checkbox" value={item.packaged} onChange={() => onDeleteItem(item.id)}/>
+            <input type="checkbox" value={item.packaged} onChange={() => onToggleItem(item.id)}/>
             <span style={item.packaged ? {textDecoration: 'line-through'} : {}}>
                 {item.quantity} {item.description}
             </span>
