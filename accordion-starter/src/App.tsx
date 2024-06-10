@@ -1,5 +1,6 @@
 import './App.css'
 import {useState} from "react";
+import Cacalculator from "./pages/Cacalculator.tsx";
 
 const faqs = [
     {
@@ -20,6 +21,8 @@ function App() {
     return (
         <div>
             <Accordion data={faqs} />
+
+            <Cacalculator />
         </div>
     )
 
