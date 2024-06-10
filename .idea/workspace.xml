@@ -4,11 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01074a34-f817-47bc-b270-f771fba445e6" name="更改" comment="组件拆分" />
+    <list default="true" id="01074a34-f817-47bc-b270-f771fba445e6" name="更改" comment="手风琴">
+      <change afterPath="$PROJECT_DIR$/accordion-starter/src/pages/steps.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accordion-starter/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/accordion-starter/src/App.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -72,7 +83,7 @@
       <updated>1717566211365</updated>
       <workItem from="1717566212486" duration="410000" />
       <workItem from="1717566639227" duration="7681000" />
-      <workItem from="1717897280491" duration="4548000" />
+      <workItem from="1717897280491" duration="8557000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add delete">
       <option name="closed" value="true" />
@@ -114,7 +125,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717594990942</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="手风琴">
+      <option name="closed" value="true" />
+      <created>1717925038502</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1717925038502</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +156,7 @@
     <MESSAGE value="完善todolist" />
     <MESSAGE value="添加排序" />
     <MESSAGE value="组件拆分" />
-    <option name="LAST_COMMIT_MESSAGE" value="组件拆分" />
+    <MESSAGE value="手风琴" />
+    <option name="LAST_COMMIT_MESSAGE" value="手风琴" />
   </component>
 </project>
