@@ -28,7 +28,7 @@ function App() {
 
 }
 
-function Accordion({data}) {
+function Accordion({data}:{data:any[]}) {
     const  [curOpen, setCurOpen] = useState(null)
 
     return <div className="accordion">
@@ -47,7 +47,7 @@ function Accordion({data}) {
     </div>
 }
 
-function AccordionItem({num,title,curOpen,onOpen,children}) {
+function AccordionItem({num,title,curOpen,onOpen,children}:any) {
 
     // const [isOpen, setIsOpen] = useState(false)
     const isOpen = curOpen === num;

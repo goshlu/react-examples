@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {MouseEventHandler, useState} from "react";
 
 export default function Cacalculator () {
     return (
@@ -14,7 +14,7 @@ function TipCalculator () {
     const [percentage1, setPercentage1] = useState(0);
     const [percentage2, setPercentage2] = useState(0);
 
-    const tip = bill * ((percentage1 + percentage2) / 2 / 100);
+    const tip = Number(bill) * ((percentage1 + percentage2) / 2 / 100);
 
     function handleReset () {
         setBill("");
@@ -27,15 +27,16 @@ function TipCalculator () {
             <BillInput bill={bill} onSetBill={setBill}/>
             <SelectPercentage percentage={percentage1} onSelect={setPercentage1}>How did you like service?</SelectPercentage>
             <SelectPercentage percentage={percentage2} onSelect={setPercentage2}>How did your friend like service?</SelectPercentage>
-            {bill > 0 && <>
+            {Number(bill) > 0 && <>
                 <Output bill={bill} tip={tip} />
                 <Reset  onReset={handleReset}/>
-            </>}
+            </>
+            }
         </div>
     )
 }
 
-function BillInput ({bill, onSetBill}) {
+function BillInput ({bill, onSetBill}:{bill:string,onSetBill:Function}) {
     return (
         <div>
             <label>How much was the bill?</label>
@@ -44,7 +45,7 @@ function BillInput ({bill, onSetBill}) {
     )
 }
 
-function SelectPercentage ({percentage,onSelect,children}) {
+function SelectPercentage ({percentage,onSelect,children}:{percentage:number,onSelect:Function,children:string}) {
     return (
         <div>
             <label>{children}</label>
@@ -58,13 +59,13 @@ function SelectPercentage ({percentage,onSelect,children}) {
     )
 }
 
-function Output ({bill,tip}) {
+function Output ({bill,tip}:{bill:string,tip:number}) {
     return (
         <h3>You pay ${bill + tip}  (${bill} + ${tip} tip)</h3>
     )
 }
 
-function Reset ({onReset}) {
+function Reset ({onReset}: {onReset:MouseEventHandler}) {
     return (
         <button onClick={onReset}>Reset</button>
     )

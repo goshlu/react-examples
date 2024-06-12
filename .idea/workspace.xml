@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01074a34-f817-47bc-b270-f771fba445e6" name="更改" comment="手风琴">
-      <change afterPath="$PROJECT_DIR$/accordion-starter/src/pages/Cacalculator.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usepopcorn/src/pages/TextExpander.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usepopcorn/src/pages/rateing.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accordion-starter/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/accordion-starter/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accordion-starter/src/pages/Cacalculator.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/accordion-starter/src/pages/Cacalculator.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accordion-starter/src/pages/steps.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/accordion-starter/src/pages/steps.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +57,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
     "ts.external.directory.path": "C:\\Users\\yskm\\Documents\\react-examples\\accordion-starter\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -83,7 +86,7 @@
       <updated>1717566211365</updated>
       <workItem from="1717566212486" duration="410000" />
       <workItem from="1717566639227" duration="7681000" />
-      <workItem from="1717897280491" duration="11327000" />
+      <workItem from="1717897280491" duration="27350000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add delete">
       <option name="closed" value="true" />

@@ -62,7 +62,7 @@ function Steps () {
     )
 }
 
-function StepMessage({ step, children}) {
+function StepMessage({ step, children}: {step: number, children: any}) {
     return (
         <div className="message">
             <h3>Step {step}</h3>
@@ -71,7 +71,7 @@ function StepMessage({ step, children}) {
     )
 }
 
-function Button({textColor, bgColor, onClick, children}) {
+function Button({textColor, bgColor, onClick, children}:{textColor: string, bgColor: string,onClick: () => void, children: any}) {
     return (
         <button
             style={{backgroundColor: bgColor, color: textColor}}
